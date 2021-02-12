@@ -21,29 +21,54 @@ Install pre-requisites:
 
 1. For e-NGAS Provider
 
-	a) start the Provider:
+	a) configure
+	
+	Upate the configurations in the files (localhost_conf.py and mySQL_conf.py) basing on your situations. 
+	
+	The configuration files locate in the path: e-NGAS/data_publisher_side_system/main_config/
+	
+	b) initialize the database
+	
+	python e-NGAS/data_publisher_side_system/Database_and_data/mysql_db_create_functions.py
+	
+	c) to test
+	
+	python e-NGAS/data_publisher_side_system/Database_and_data/mysql_init_ngas_files_test_data_table.py
+	
+	d) start the Provider:
 	
 	python e-NGAS/data_publisher_side_system/data_provider/start_publish.py
 
-	b) stop the Provider:
+	f) stop the Provider:
 	
 	python e-NGAS/data_publisher_side_system/data_provider/start_publish.py
 	
 2. For e-NGAS Subscriber
 
-	a) start the Subscriber:
+	a) configure
+	
+	Upate the configurations in the files (localhost_conf.py and mySQL_conf.py) basing on your situations. 
+	
+	The configuration files locate in the path: e-NGAS/data_subscriber_side_system/main_config/
+	
+	b) initialize the database
+	
+	python e-NGAS/data_subscriber_side_system/Database_and_data/mysql_db_create_functions.py
+	
+	c) start the Subscriber:
 	
 	python e-NGAS/data_subscriber_side_system/data_subscriber/start_subscribe.py
 	
-	b) stop the Subscriber:
+	d) stop the Subscriber:
 	
 	python e-NGAS/data_subscriber_side_system/data_subscriber/stop_subscribe.py
 	
-	c) subscribe the Provider:
+	e) subscribe the Provider:
 	
 	python e-NGAS/data_subscriber_side_system/data_subscriber/subscribe_publisher.py publisher-ip local-ip
 	
-	d) unsubscribe the Provider:
+	f) unsubscribe the Provider:
 	
 	python e-NGAS/data_subscriber_side_system/data_subscriber/unsubscribe_publisher.py publisher-ip local-ip
+	
 	

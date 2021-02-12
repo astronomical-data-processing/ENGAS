@@ -35,6 +35,11 @@ Install pre-requisites:
 	
 	python e-NGAS/data_publisher_side_system/Database_and_data/mysql_init_ngas_files_test_data_table.py
 	
+	Note that:
+	The table ngas_files_test is based on the ngas_files of NGAS. Therefore, e-NGAS Provider needs to the records archived by NGAS in its current version.
+	
+	NGAS's documentation is [online](https://ngas.readthedocs.io/en/master/) and the NGAS storage system is [online](https://github.com/ICRAR/ngas).
+	
 	d) start the Provider:
 	
 	python e-NGAS/data_publisher_side_system/data_provider/start_publish.py
@@ -42,6 +47,7 @@ Install pre-requisites:
 	f) stop the Provider:
 	
 	python e-NGAS/data_publisher_side_system/data_provider/start_publish.py
+	
 	
 2. For e-NGAS Subscriber
 

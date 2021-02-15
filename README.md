@@ -45,7 +45,7 @@ Install pre-requisites:
 Astronomy Observatory (NRAO) in Socorro and Charlottesville and the Atacama Large Millimeter/Submillimeter Array (ALMA) is using the system to collect the data directly at the control site in the Chilean Andes and then distribute the data to Santiago and further on to the ALMA regional centers in the US, Japan and Germany. 
 	The version of NGAS delivered [in this distribution](https://github.com/ICRAR/ngas) is a branch of the original ALMA version. International Centre for Radio Astronomy Research ([ICRAR](http://www.icrar.org)) had further developed and adopted NGAS to deal with the much higher data rate of the Murchison Widefield Array (MWA) and quite some work went into the installation and automatic test features.
 	 
-	 NGAS's documentation is [online](https://ngas.readthedocs.io/en/master/) and the NGAS storage system is [online](https://github.com/ICRAR/ngas). ( - )
+	 NGAS's documentation is [online](https://ngas.readthedocs.io/en/master/) and the NGAS storage system is [online](https://github.com/ICRAR/ngas).
 	
 	
 	d) start the Provider:

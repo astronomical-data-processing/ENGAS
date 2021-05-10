@@ -63,7 +63,7 @@ Astronomy Observatory (NRAO) in Socorro and Charlottesville and the Atacama Larg
 	
 	Upate the configurations in the files (localhost_conf.py and mySQL_conf.py) basing on your situations. 
 	
-	The configuration files locate in the path: e-NGAS/data_subscriber_side_system/main_config/
+	The configuration files locate in the path: eNGAS/data_subscriber_side_system/main_config/
 	
 	b) initialize the database
 	

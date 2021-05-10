@@ -1,6 +1,6 @@
 # eNGAS
 
-eNGAS is an enhanced remote astronomical archive system based on the File-Level  Unlimited Sliding Window (USW) Technique.
+eNGAS is an enhanced remote astronomical archive system based on the file-level  Unlimited Sliding Window (USW) Technique.
 
 eNGAS is written in Python, and thus highly portable. It supports Python 3.5+.
 

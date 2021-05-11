@@ -1,8 +1,8 @@
-# eNGAS
+# ENGAS
 
-eNGAS is an enhanced remote astronomical archive system based on the file-level  Unlimited Sliding Window (USW) Technique.
+ENGAS is an enhanced remote astronomical archive system based on the file-level  Unlimited Sliding Window (USW) Technique.
 
-eNGAS is written in Python, and thus highly portable. It supports Python 3.5+.
+ENGAS is written in Python, and thus highly portable. It supports Python 3.5+.
 
 # Installation
 
@@ -19,25 +19,25 @@ Install pre-requisites:
 
 # Getting started
 
-1. For eNGAS Provider
+1. For ENGAS Provider
 
 	a) configure
 	
 	Upate the configurations in the files (localhost_conf.py and mySQL_conf.py) basing on your situations. 
 	
-	The configuration files locate in the path: eNGAS/data_publisher_side_system/main_config/
+	The configuration files locate in the path: ENGAS/data_publisher_side_system/main_config/
 	
 	b) initialize the database
 	
-	python eNGAS/data_publisher_side_system/Database_and_data/mysql_db_create_functions.py
+	python ENGAS/data_publisher_side_system/Database_and_data/mysql_db_create_functions.py
 	
 	c) to test
 	
-	python eNGAS/data_publisher_side_system/Database_and_data/mysql_init_ngas_files_test_data_table.py
+	python ENGAS/data_publisher_side_system/Database_and_data/mysql_init_ngas_files_test_data_table.py
 	
 	Note that:
 	
-	The table ngas_files_test is based on the ngas_files of the Next Generation Archive System (NGAS). Therefore, eNGAS Provider needs to the records archived by NGAS in its current version.
+	The table ngas_files_test is based on the ngas_files of the Next Generation Archive System (NGAS). Therefore, ENGAS Provider needs to the records archived by NGAS in its current version.
 	
 	NGAS is a very feature rich, archive handling and management system. In its core it is a HTTP based object storage system. It can be deployed on single small servers, or in globally distributed clusters. NGAS is written in Python, and thus highly portable. As of version 11 it supports both Python 2.7 and 3.5+. 
 	
@@ -50,39 +50,39 @@ Astronomy Observatory (NRAO) in Socorro and Charlottesville and the Atacama Larg
 	
 	d) start the Provider:
 	
-	python eNGAS/data_publisher_side_system/data_provider/start_publish.py
+	python ENGAS/data_publisher_side_system/data_provider/start_publish.py
 
 	f) stop the Provider:
 	
-	python eNGAS/data_publisher_side_system/data_provider/start_publish.py
+	python ENGAS/data_publisher_side_system/data_provider/start_publish.py
 	
 	
-2. For eNGAS Subscriber
+2. For ENGAS Subscriber
 
 	a) configure
 	
 	Upate the configurations in the files (localhost_conf.py and mySQL_conf.py) basing on your situations. 
 	
-	The configuration files locate in the path: eNGAS/data_subscriber_side_system/main_config/
+	The configuration files locate in the path: ENGAS/data_subscriber_side_system/main_config/
 	
 	b) initialize the database
 	
-	python eNGAS/data_subscriber_side_system/Database_and_data/mysql_db_create_functions.py
+	python ENGAS/data_subscriber_side_system/Database_and_data/mysql_db_create_functions.py
 	
 	c) start the Subscriber:
 	
-	python eNGAS/data_subscriber_side_system/data_subscriber/start_subscribe.py
+	python ENGAS/data_subscriber_side_system/data_subscriber/start_subscribe.py
 	
 	d) stop the Subscriber:
 	
-	python eNGAS/data_subscriber_side_system/data_subscriber/stop_subscribe.py
+	python ENGAS/data_subscriber_side_system/data_subscriber/stop_subscribe.py
 	
 	e) subscribe the Provider:
 	
-	python eNGAS/data_subscriber_side_system/data_subscriber/subscribe_publisher.py publisher-ip local-ip
+	python ENGAS/data_subscriber_side_system/data_subscriber/subscribe_publisher.py publisher-ip local-ip
 	
 	f) unsubscribe the Provider:
 	
-	python eNGAS/data_subscriber_side_system/data_subscriber/unsubscribe_publisher.py publisher-ip local-ip
+	python ENGAS/data_subscriber_side_system/data_subscriber/unsubscribe_publisher.py publisher-ip local-ip
 	
 	
